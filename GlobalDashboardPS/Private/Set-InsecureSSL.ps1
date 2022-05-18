@@ -1,4 +1,15 @@
 function Set-InsecureSSL {
+    <#
+    .SYNOPSIS
+        Allow invalid SSL
+    .DESCRIPTION
+        Set CertificatePolicy to TrustAllCertsPolicy and SecurityProtocol to Ssl3,Tls,Tls11,Tls12
+    .NOTES
+       Only supported on Windows PowerShell
+    .EXAMPLE
+        Set-InsecureSSL
+    #>
+    
     [cmdletbinding(SupportsShouldProcess)]
     param()
 
